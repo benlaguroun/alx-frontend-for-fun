@@ -1,0 +1,149 @@
+/* SUMMARY
+    1. GLOBAL
+    2. LAYOUT
+    3. SECTION
+    4. CARD
+*/
+
+/*** 1. GLOBAL ***/
+
+/* Reset / Normalize
+   ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+}
+
+/*** 2. LAYOUT ***/
+
+/* Container
+   ============================= */
+.container {
+  max-width: 114rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Grid
+   ============================= */
+.row {
+  display: flex; /* Change to display flex */
+}
+
+[class*='col-'] {
+  /* Remove float: left */
+  /* float: left; */
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+[class*='col-']:last-child {
+  margin-right: 0;
+}
+
+/*** 3. SECTION ***/
+
+/* Header
+   ============================= */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-header p {
+  font-size: 1.6rem;
+  color: #7e7e7e;
+}
+
+/* Latest news
+   ============================= */
+.section-latest-news { /* Add this class */
+  /* Add a comment section */
+  /* Section Latest news ============================= */
+}
+
+.section-latest-news .row { /* Target the row class inside section-latest-news class */
+  flex-direction: row-reverse; /* Add flex-direction: row-reverse */
+}
+
+/* Card
+   ============================= */
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-content p {
+  font-size: 1.6rem;
+  color: #7e7e7e;
+}
+
+/*** 4. CARD ***/
+
+
