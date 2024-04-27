@@ -1,0 +1,15 @@
+// 8-mixin_margins.scss
+
+@mixin margins {
+  margin-left: $left-margin;
+  margin-right: $right-margin;
+}
+
+body {
+  @include margins;
+}
+
+div {
+  @include margins;
+}
+
