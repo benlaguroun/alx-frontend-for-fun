@@ -1,0 +1,13 @@
+// 2-color_variables.scss
+
+$main-color: #3D3D3D;
+$background-color: #6D6D6D;
+
+body, p {
+  color: $main-color;
+}
+
+body, h2 {
+  background-color: $background-color;
+}
+
